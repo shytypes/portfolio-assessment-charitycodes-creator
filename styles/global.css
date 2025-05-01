@@ -15,27 +15,41 @@
   margin: 20px 0;
   color: #333;
 }
+
 /* Section styling for layout */
 section {
-  padding: 20px;
+  padding: 40px 20px; /* Added top/bottom padding for more breathing room */
   max-width: 800px;
-  margin: 0 auto;
+  margin: 20px auto; /* Ensure spacing around sections */
+  background-color: #f9f9f9; /* Light background for sections */
+  border-radius: 8px; /* Slight rounded corners */
 }
 
-/* Paragraph spacing for readability */
+/* Paragraph styling for readability */
 p {
   margin-bottom: 1rem;
-  line-height: 1.5;
+  line-height: 1.6; /* Increased line-height for better readability */
   font-family: 'JetBrains Mono', monospace;
   color: #444;
+  font-size: 1rem; /* Make font size consistent for paragraphs */
 }
 
 /* Link styling */
 a {
   color: #1a73e8;
   text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
 }
 
 a:hover {
   text-decoration: underline;
+  color: #0066cc; /* Darker blue on hover */
+}
+
+/* Ensure images are responsive and maintain their aspect ratio */
+.responsive-img {
+  max-width: 100%;    /* Image will never exceed the container width */
+  height: auto;       /* Maintain aspect ratio */
+  display: block;     /* Ensures there are no extra spaces below the image */
+  margin: 0 auto;     /* Center the image horizontally */
 }
